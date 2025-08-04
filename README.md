@@ -70,7 +70,7 @@ StructureManager::deleteCategory(5);
 ### Media-Kategorien verschieben
 
 ```php
-use FriendsOfRedaxo\StructureManager\MediaCatiguri;
+use FriendsOfRedaxo\StructureManager\MediaCategoryManager;
 
 $sql = rex_sql::factory();
 

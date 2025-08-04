@@ -1,5 +1,39 @@
-# addon:nv_categorymanager de_de
+# addon:structure_manager de_de
 
-nv_categorymanager_title = Struktur Kategorieverwaltung
-nv_categorymanager_settings = Einstellungen
-nv_categorymanager_suffix = Suffix beim Kopieren (z.B. [Kopie])
+structure_manager.title = Struktur-Management
+structure_manager.settings = Einstellungen
+
+# Page titles
+structure_manager.page.category = Kategorien
+structure_manager.page.article = Artikel
+structure_manager.page.media_category = Medien-Kategorien
+
+# Messages
+structure_manager.error.general = Ein Fehler ist aufgetreten. Bitte wenden Sie sich an den Webmaster.
+structure_manager.error.occurred = Es ist ein Fehler aufgetreten.
+structure_manager.success.category_copied = Kategorie erfolgreich kopiert.
+structure_manager.success.article_copied = Artikel erfolgreich kopiert.
+structure_manager.success.category_deleted = Kategorie erfolgreich gelöscht.
+structure_manager.success.media_category_moved = Medien Kategorie erfolgreich verschoben.
+
+# Actions
+structure_manager.action.copy = Kopieren
+structure_manager.action.copy_article_content = Artikelinhalte Kopieren
+structure_manager.action.delete = Löschen
+structure_manager.action.move = Verschieben
+
+# Confirmations
+structure_manager.confirm.delete = Wirklich unwiderruflich löschen?
+structure_manager.confirm.move = Wirklich verschieben?
+
+# Sections
+structure_manager.section.copy_category = Kategorie kopieren
+structure_manager.section.copy_article_content = Artikelinhalte kopieren
+structure_manager.section.delete_category = Kategorie löschen
+structure_manager.section.move_media_category = Medien Kategorie Verschieben
+
+# Info messages
+structure_manager.info.copy_help = Wählen Sie eine Quell-Kategorie und eine Ziel-Kategorie aus. Optional können Sie einen neuen Namen, Suffix und Status festlegen.
+structure_manager.info.copy_article_help = Kopiert den Inhalt (Slices) von einem Artikel zu einem anderen. Die Artikel-Metadaten werden nicht kopiert.
+
+structure_manager.update = StructureManager aktualisieren

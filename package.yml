@@ -1,27 +1,30 @@
-# Alle hier gesetzten Werte können über `$addon->getProperty($key)` abgefragt werden
+package: structure_manager
+version: '2.0.1'
+author: FriendsOfREDAXO
+supportpage: https://github.com/friendsofredaxo/structure_manager
 
-package: nv_categorymanager # Pflichtfeld
-version: '1.3.0' # Pflichtfeld
-author: novinet GmbH & Co KG
-supportpage: https://github.com/novinet-git/nv_categorymanager
-
-# Seiten
 page:
-    title: 'nvCategoryManager' # Werte die mit `translate:` beginnen, werden anhand der Sprachdatei übersetzt. Der Addon-Präfix (hier `demo_addon_`) kann weggelassen werden.
-    icon: nv_categorymanager_novinet-icon-logo
-    perm: nv_categorymanager[] # Seite ist nur für Admins erreichbar
-    pjax: true
+    title: translate:structure_manager.title
+    icon: rex-icon fa-copy
+    perm: admin
     subpages:
-        update:
-            title: 'Verwaltung'
-            icon: rex-icon fa-list
-        settings:
-            title: translate:nv_categorymanager_settings
-            icon: rex-icon fa-cog
-        info:
-            title: 'Info'
-            icon: rex-icon fa-info-circle
-            
-    
+        category:
+            title: translate:structure_manager.page.category
+            icon: rex-icon rex-icon-open-category
+        article:
+            title: translate:structure_manager.page.article
+            icon: rex-icon rex-icon-article
+        media_category:
+            title: translate:structure_manager.page.media_category
+            icon: rex-icon rex-icon-media
+
 requires:
-    redaxo: ^5.5.0
+    redaxo: ^5.18.0
+    php: ^8.3
+
+conflicts:
+    packages:
+        nv_categorymanager: '>=0'
+        
+default_config:
+    auto_remove_copy_suffix: true

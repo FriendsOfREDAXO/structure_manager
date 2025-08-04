@@ -1,7 +1,3 @@
 <?php
 
-if (!$this->hasConfig()) {
-    $this->setConfig([
-            "suffix" => "[Kopie]"
-    ]);
-}
+$addon = rex_addon::get('structure_manager');
